@@ -1,0 +1,145 @@
+body {
+    background-color: aliceblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* making all margin and padding to 0*/
+    /**/
+}
+
+nav {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+    display: flex;
+    /* all items will come horizontaly */
+    align-items: center;
+    /* to make all items at center*/
+    list-style-type: none;
+    /* remove the waste point cicle */
+    height: 60px;
+    background-color: black;
+    color: white;
+    /*to see the text over the black background*/
+}
+
+.company img {
+    /* company is the class defined here*/
+    width: 47px;
+    padding: 2px 8px;
+}
+
+nav ul li {
+    padding: 0 8px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.company {
+    display: flex;
+    /* to make the spotify title at center*/
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container {
+    min-height: 60vh;
+    background-color: black;
+    background-image: url('c.webp');
+    color: aquamarine;
+    display: flex;
+    margin: 12px auto;
+    width: 75%;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.bottom {
+    position: sticky;
+    height: 80px;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /*to make the range class at center*/
+    align-items: center;
+    /*align all items of bottom at center*/
+    flex-direction: column;
+    /*to make the bottom items coloumn wise and at center*/
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 3px;
+}
+
+#myprogressbar {
+    width: 80vw;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#gif {
+    position: absolute;
+    bottom: 98px;
+    width: 300px;
+    height: 150px;
+    right: 180px;
+}
+
+#mastersongname {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
+    left: 12vw;
+    top: 32px;
+    /* width: 300px;
+    height: 150px; */
+    /* left: 10vw;
+    top: 40px;
+    color: antiquewhite; */
+}
+
+.songItem {
+    height: 45px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 14px 0;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.songItem img {
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.timestamp {
+    margin: 0 15px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+#gif {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
